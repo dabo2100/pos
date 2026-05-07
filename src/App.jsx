@@ -4,6 +4,9 @@ import ForgetPage from './pages/ForgetPage';
 import AdminLayout from './layouts/AdminLayout';
 import DashboardPage from './pages/DashboardPage';
 import { Toaster } from 'react-hot-toast';
+import StaffManagementPage from './pages/dashboard/StaffManagement';
+import MenuPage from './pages/dashboard/MenuEditor';
+import SalesPage from './pages/dashboard/SalesReport';
 
 export default function App() {
   return (
@@ -21,9 +24,9 @@ export default function App() {
 
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<DashboardPage />} />
-            <Route path="staff" element={<h1>Staff Page</h1>} />
-            <Route path="menu" element={<h1>Menu Page</h1>} />
-            <Route path="sales" element={<h1>Sales Page</h1>} />
+            <Route path="staff" element={<StaffManagementPage />} />
+            <Route path="menu" element={<MenuPage />} />
+            <Route path="sales" element={<SalesPage />} />
           </Route>
 
           {/* Layout 3 */}
